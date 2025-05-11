@@ -75,11 +75,11 @@
 
         togsai {
             bindings = <&tog 6>;
-            key-positions = <20 33>;
+            key-positions = <10 33>;
         };
 
-        togwasd {
-            bindings = <&tog 7>;
+        towasd {
+            bindings = <&to 7>;
             key-positions = <31 36>;
         };
     };
@@ -155,10 +155,10 @@
 
         wasd {
             bindings = <
-         &kp TAB    &kp Q  &kp    &kp E      &kp R        &kp N1  &kp N2    &kp N3        &kp N4     &kp N5
-         &kp LSHFT  &kp A  &kp W  &kp D      &kp F        &kp     &kp LEFT  &kp UP_ARROW  &kp RIGHT  &kp
-&kp ESC  &kp CAPS   &kp Z  &kp S  &kp C      &kp V        &kp     &kp       &kp DOWN      &kp        &kp     &tog 7
-                           &kp X  &kp SPACE  &kp LCTRL    &kp     &kp       &kp
+         &kp TAB    &kp Q  &none  &kp E      &kp R        &kp N1  &kp N2    &kp N3        &kp N4     &kp N5
+         &kp LSHFT  &kp A  &kp W  &kp D      &kp F        &none   &kp LEFT  &kp UP_ARROW  &kp RIGHT  &none
+&kp ESC  &kp CAPS   &kp Z  &kp S  &kp C      &kp V        &none   &none     &kp DOWN      &none      &none   &to 0
+                           &kp X  &kp SPACE  &kp LCTRL    &none   &none     &none
             >;
         };
     };

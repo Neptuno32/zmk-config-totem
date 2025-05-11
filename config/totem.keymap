@@ -73,9 +73,14 @@
     combos {
         compatible = "zmk,combos";
 
-        caps {
-            bindings = <&caps_word>;
-            key-positions = <13 16>;
+        togsai {
+            bindings = <&tog 6>;
+            key-positions = <20 33>;
+        };
+
+        togwasd {
+            bindings = <&tog 7>;
+            key-positions = <31 36>;
         };
     };
 
@@ -85,10 +90,10 @@
         Base {
             label = "Base";
             bindings = <
-        &kp Q            &kp W            &kp E                &kp R              &kp T        &kp Y         &kp U              &kp I                &kp O              &kp P
-        &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G        &kp H         &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_SHIFT L  &hmr LEFT_GUI SINGLE_QUOTE
-&tog 6  &kp Z            &kp X            &kp C                &kp V              &kp B        &kp N         &kp M              &kp COMMA            &kp DOT            &kp MINUS                   &ShiftCaps
-                                          &lt 5 ESCAPE         &lt 1 SPACE        &lt 3 TAB    &lt 2 RETURN  &lt 4 BACKSPACE    &lt 5 DELETE
+            &kp Q            &kp W            &kp E                &kp R              &kp T        &kp Y         &kp U              &kp I                &kp O              &kp P
+            &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G        &kp H         &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_SHIFT L  &hmr LEFT_GUI SINGLE_QUOTE
+&caps_word  &kp Z            &kp X            &kp C                &kp V              &kp B        &kp N         &kp M              &kp COMMA            &kp DOT            &kp MINUS                   &sk LEFT_SHIFT
+                                              &lt 5 ESCAPE         &lt 1 SPACE        &lt 3 TAB    &lt 2 RETURN  &lt 4 BACKSPACE    &lt 5 DELETE
             >;
         };
 
@@ -125,7 +130,7 @@
             bindings = <
        &none     &none     &none      &none      &none    &none  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
        &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
-&none  &none     &none     &none      &none      &none    &none  &none           &none           &none         &none            &tog 4
+&none  &none     &none     &none      &none      &none    &none  &none           &none           &none         &none            &none
                            &none      &none      &none    &none  &none           &none
             >;
         };
@@ -145,6 +150,15 @@
         &trans  &kp LA(SPACE)  &kp LC(SPACE)  &trans     &trans    &trans  &trans          &trans  &trans  &trans
 &tog 6  &trans  &trans         &trans         &trans     &trans    &trans  &trans          &trans  &trans  &trans  &none
                                &kp J          &kp SPACE  &kp K     &trans  &studio_unlock  &trans
+            >;
+        };
+
+        wasd {
+            bindings = <
+         &kp TAB    &kp Q  &kp    &kp E      &kp R        &kp N1  &kp N2    &kp N3        &kp N4     &kp N5
+         &kp LSHFT  &kp A  &kp W  &kp D      &kp F        &kp     &kp LEFT  &kp UP_ARROW  &kp RIGHT  &kp
+&kp ESC  &kp CAPS   &kp Z  &kp S  &kp C      &kp V        &kp     &kp       &kp DOWN      &kp        &kp     &tog 7
+                           &kp X  &kp SPACE  &kp LCTRL    &kp     &kp       &kp
             >;
         };
     };

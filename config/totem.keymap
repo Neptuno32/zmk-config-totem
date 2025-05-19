@@ -24,8 +24,9 @@
 &sk { quick-release; };
 
 &lt {
-    quick-tap-ms = <100>;
-    tapping-term-ms = <170>;
+    quick-tap-ms = <175>;
+    tapping-term-ms = <200>;
+    flavor = "balanced";
 };
 
 &caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE SPACE>; };

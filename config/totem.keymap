@@ -93,8 +93,8 @@
             bindings = <
             &kp Q            &kp W            &kp E                &kp R              &kp T        &kp Y         &kp U              &kp I                &kp O              &kp P
             &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G        &kp H         &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_SHIFT L  &hmr LEFT_GUI SINGLE_QUOTE
-&caps_word  &kp Z            &kp X            &kp C                &kp V              &kp B        &kp N         &kp M              &kp COMMA            &kp DOT            &kp RA(N)                   &sk LEFT_SHIFT
-                                              &lt 5 ESCAPE         &lt 1 SPACE        &lt 3 TAB    &lt 2 RETURN  &lt 4 BACKSPACE    &lt 5 DELETE
+&caps_word  &kp Z            &kp X            &kp C                &kp V              &kp B        &kp N         &kp M              &kp COMMA            &kp DOT            &kp MINUS                   &sk LEFT_SHIFT
+                                              &lt 5 ESCAPE         &lt 1 SPACE        &lt 4 TAB    &lt 3 RETURN  &lt 4 BACKSPACE    &lt 5 DELETE
             >;
         };
 
@@ -111,19 +111,19 @@
 
         SymL {
             bindings = <
-       &kp EXCLAMATION  &kp AT_SIGN  &kp HASH        &kp DOLLAR       &kp PERCENT      &none  &none      &none      &none          &none
-       &kp BACKSLASH    &kp TILDE    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp AMPERSAND    &none  &kp LSHFT  &kp LCTRL  &kp RIGHT_ALT  &kp LGUI
-&none  &none            &kp GRAVE    &none           &none            &none            &none  &none      &none      &none          &none     &none
-                                     &none           &kp PIPE         &none            &none  &none      &none
+       &kp EXCLAMATION  &kp AT_SIGN  &kp HASH     &kp DOLLAR  &kp PERCENT    &none  &none      &none      &none          &none
+       &kp BACKSLASH    &kp TILDE    &kp PERCENT  &kp AMPS    &kp PIPE       &none  &kp LSHFT  &kp LCTRL  &kp RIGHT_ALT  &kp LGUI
+&none  &none            &kp GRAVE    &none        &none       &none          &none  &none      &none      &none          &none     &none
+                                     &none        &none       &none          &none  &none      &none
             >;
         };
 
         SymR {
             bindings = <
-       &none     &none          &none      &none      &none    &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE  &kp QUESTION
-       &kp LGUI  &kp RIGHT_ALT  &kp LCTRL  &kp LSHFT  &none    &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK    &kp SLASH
-&none  &none     &none          &none      &none      &none    &none      &kp CARET             &kp SEMICOLON          &kp COLON       &none         &none
-                                &none      &none      &none    &none      &kp EQUAL             &none
+       &none     &none          &none      &none      &none    &kp PLUS      &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp QUESTION
+       &kp LGUI  &kp RIGHT_ALT  &kp LCTRL  &kp LSHFT  &none    &kp ASTERISK  &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp SLASH
+&none  &none     &none          &none      &none      &none    &kp RA(N)     &kp CARET              &kp SEMICOLON      &kp COLON        &kp UNDERSCORE  &none
+                                &none      &none      &none    &none         &kp EQUAL              &none
             >;
         };
 

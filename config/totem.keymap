@@ -99,16 +99,6 @@
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 21 22 23 24 25 32 33 20 34 35 36 37>;
             hold-while-undecided;
         };
-
-        saimenu: saimenu {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SAIMENU";
-            bindings = <&kp>, <&sl>;
-
-            #binding-cells = <2>;
-            hold-while-undecided;
-            tapping-term-ms = <(-1)>;
-        };
     };
 
     combos {
@@ -122,20 +112,6 @@
         towasd {
             bindings = <&to 7>;
             key-positions = <31 36>;
-        };
-
-        rotsai {
-            bindings = <&kp LA(SPACE)>;
-            key-positions = <11 33>;
-            layers = <6>;
-            slow-release;
-        };
-
-        zoomsai {
-            bindings = <&kp LC(SPACE)>;
-            key-positions = <33 12>;
-            layers = <6>;
-            slow-release;
         };
     };
 
@@ -201,10 +177,10 @@
 
         SAI {
             bindings = <
-        &trans  &trans  &trans  &trans            &trans    &trans  &trans          &trans  &trans  &trans
-        &trans  &trans  &trans  &trans            &trans    &trans  &trans          &trans  &trans  &trans
-&tog 6  &trans  &trans  &trans  &trans            &trans    &trans  &trans          &trans  &trans  &trans  &none
-                        &trans  &saimenu SPACE 1  &trans    &trans  &studio_unlock  &trans
+        &trans  &trans         &trans         &trans     &trans    &trans  &trans          &trans  &trans  &trans
+        &trans  &kp LA(SPACE)  &kp LC(SPACE)  &trans     &trans    &trans  &trans          &trans  &trans  &trans
+&tog 6  &trans  &trans         &trans         &trans     &trans    &trans  &trans          &trans  &trans  &trans  &none
+                               &trans         &kp SPACE  &trans    &trans  &studio_unlock  &trans
             >;
         };
 

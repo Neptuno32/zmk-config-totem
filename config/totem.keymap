@@ -99,6 +99,16 @@
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 21 22 23 24 25 32 33 20 34 35 36 37>;
             hold-while-undecided;
         };
+
+        saimenu: saimenu {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SAIMENU";
+            bindings = <&kp>, <&sl>;
+
+            #binding-cells = <2>;
+            hold-while-undecided;
+            tapping-term-ms = <0>;
+        };
     };
 
     combos {
@@ -126,15 +136,6 @@
             key-positions = <33 12>;
             layers = <6>;
             slow-release;
-        };
-    };
-
-    macros {
-        saispacemenu: test {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE &mo 1>;
-            label = "TEST";
         };
     };
 
@@ -200,10 +201,10 @@
 
         SAI {
             bindings = <
-        &trans  &trans  &trans  &trans         &trans    &trans  &trans          &trans  &trans  &trans
-        &trans  &trans  &trans  &trans         &trans    &trans  &trans          &trans  &trans  &trans
-&tog 6  &trans  &trans  &trans  &trans         &trans    &trans  &trans          &trans  &trans  &trans  &none
-                        &trans  &saispacemenu  &trans    &trans  &studio_unlock  &trans
+        &trans  &trans  &trans  &trans            &trans    &trans  &trans          &trans  &trans  &trans
+        &trans  &trans  &trans  &trans            &trans    &trans  &trans          &trans  &trans  &trans
+&tog 6  &trans  &trans  &trans  &trans            &trans    &trans  &trans          &trans  &trans  &trans  &none
+                        &trans  &saimenu SPACE 1  &trans    &trans  &studio_unlock  &trans
             >;
         };
 

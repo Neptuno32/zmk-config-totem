@@ -129,6 +129,15 @@
         };
     };
 
+    macros {
+        saispacemenu: test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &mo 1>;
+            label = "TEST";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -191,10 +200,10 @@
 
         SAI {
             bindings = <
-        &trans  &trans  &trans  &trans     &trans    &trans  &trans          &trans  &trans  &trans
-        &trans  &trans  &trans  &trans     &trans    &trans  &trans          &trans  &trans  &trans
-&tog 6  &trans  &trans  &trans  &trans     &trans    &trans  &trans          &trans  &trans  &trans  &none
-                        &trans  &kp SPACE  &trans    &trans  &studio_unlock  &trans
+        &trans  &trans  &trans  &trans         &trans    &trans  &trans          &trans  &trans  &trans
+        &trans  &trans  &trans  &trans         &trans    &trans  &trans          &trans  &trans  &trans
+&tog 6  &trans  &trans  &trans  &trans         &trans    &trans  &trans          &trans  &trans  &trans  &none
+                        &trans  &saispacemenu  &trans    &trans  &studio_unlock  &trans
             >;
         };
 

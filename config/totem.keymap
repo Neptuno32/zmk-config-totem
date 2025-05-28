@@ -107,7 +107,7 @@
         togsai {
             bindings = <&tog 6>;
             key-positions = <33 20>;
-            layers = <6>;
+            layers = <0>;
         };
 
         towasd {

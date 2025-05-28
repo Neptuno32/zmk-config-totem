@@ -107,11 +107,27 @@
         togsai {
             bindings = <&tog 6>;
             key-positions = <33 20>;
+            layers = <6>;
         };
 
         towasd {
             bindings = <&to 7>;
             key-positions = <31 36>;
+            layers = <0>;
+        };
+
+        sairotate {
+            bindings = <&kp LA(SPACE)>;
+            key-positions = <11 33>;
+            slow-release;
+            layers = <6>;
+        };
+
+        saizoom {
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <12 33>;
+            slow-release;
+            layers = <6>;
         };
     };
 
@@ -177,10 +193,10 @@
 
         SAI {
             bindings = <
-        &trans  &trans         &trans         &trans     &trans    &trans  &trans          &trans  &trans  &trans
-        &trans  &kp LA(SPACE)  &kp LC(SPACE)  &trans     &trans    &trans  &trans          &trans  &trans  &trans
-&tog 6  &trans  &trans         &trans         &trans     &trans    &trans  &trans          &trans  &trans  &trans  &none
-                               &trans         &kp SPACE  &trans    &trans  &studio_unlock  &trans
+        &trans  &trans             &trans  &trans     &trans    &trans  &trans          &trans  &trans  &trans
+        &trans  &hmlsc LEFT_ALT S  &trans  &trans     &trans    &trans  &trans          &trans  &trans  &trans
+&tog 6  &trans  &trans             &trans  &trans     &trans    &trans  &trans          &trans  &trans  &trans  &none
+                                   &trans  &kp SPACE  &trans    &trans  &studio_unlock  &trans
             >;
         };
 

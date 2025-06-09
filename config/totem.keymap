@@ -105,13 +105,13 @@
         compatible = "zmk,combos";
 
         togsai {
-            bindings = <&tog 6>;
+            bindings = <&tog 7>;
             key-positions = <33 20>;
             layers = <0>;
         };
 
         towasd {
-            bindings = <&to 7>;
+            bindings = <&to 8>;
             key-positions = <31 36>;
             layers = <0>;
         };
@@ -120,14 +120,14 @@
             bindings = <&kp LA(SPACE)>;
             key-positions = <11 33>;
             slow-release;
-            layers = <6>;
+            layers = <7>;
         };
 
         saizoom {
             bindings = <&kp LC(SPACE)>;
             key-positions = <12 33>;
             slow-release;
-            layers = <6>;
+            layers = <7>;
         };
     };
 
@@ -140,7 +140,7 @@
             &kp Q            &kp W            &kp E                  &kp R                &kp T        &kp Y         &kp U                &kp I                  &kp O              &kp P
             &hml LEFT_GUI A  &hml LEFT_ALT S  &hmlsc LEFT_CONTROL D  &hmlsc LEFT_SHIFT F  &kp G        &kp H         &hmrsc LEFT_SHIFT J  &hmrsc LEFT_CONTROL K  &hmr LEFT_SHIFT L  &hmr LEFT_GUI SINGLE_QUOTE
 &caps_word  &kp Z            &kp X            &kp C                  &kp V                &kp B        &kp N         &kp M                &kp COMMA              &kp DOT            &kp MINUS                   &sk LEFT_SHIFT
-                                              &lt 5 ESCAPE           &lt 1 SPACE          &lt 3 TAB    &lt 2 RETURN  &lt 4 BACKSPACE      &lt 5 DELETE
+                                              &lt 6 ESCAPE           &lt 1 SPACE          &lt 3 TAB    &lt 2 RETURN  &lt 4 BACKSPACE      &lt 6 DELETE
             >;
         };
 
@@ -175,10 +175,19 @@
 
         Nav {
             bindings = <
-       &none     &none     &none      &none      &none    &kp HOME  &kp PAGE_DOWN   &kp INSERT      &kp PAGE_UP      &kp END
-       &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &none     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &tog 4
-&none  &none     &none     &none      &none      &none    &none     &none           &kp DOWN_ARROW  &none            &none    &none
-                           &none      &none      &none    &none     &none           &none
+       &none     &none     &none      &none      &none    &kp HOME  &kp PAGE_DOWN      &kp INSERT      &kp PAGE_UP      &kp END
+       &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &none     &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &to 4
+&none  &none     &none     &none      &none      &none    &none     &kp C_VOLUME_DOWN  &kp DOWN_ARROW  &kp C_VOLUME_UP  &none    &none
+                           &none      &none      &none    &none     &none              &none
+            >;
+        };
+
+        NavLock {
+            bindings = <
+       &none     &none     &none      &none      &none    &kp HOME  &kp PAGE_DOWN      &kp INSERT      &kp PAGE_UP      &kp END
+       &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &none     &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &tog 5
+&none  &none     &none     &none      &none      &none    &none     &kp C_VOLUME_DOWN  &kp DOWN_ARROW  &kp C_VOLUME_UP  &none    &none
+                           &none      &none      &none    &none     &none              &none
             >;
         };
 
@@ -195,7 +204,7 @@
             bindings = <
         &trans  &trans             &trans  &trans     &trans    &trans  &trans          &trans  &trans  &trans
         &trans  &hmlsc LEFT_ALT S  &trans  &trans     &trans    &trans  &trans          &trans  &trans  &trans
-&tog 6  &trans  &trans             &trans  &trans     &trans    &trans  &trans          &trans  &trans  &trans  &none
+&tog 7  &trans  &trans             &trans  &trans     &trans    &trans  &trans          &trans  &trans  &trans  &none
                                    &trans  &kp SPACE  &trans    &trans  &studio_unlock  &trans
             >;
         };

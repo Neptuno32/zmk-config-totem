@@ -147,8 +147,8 @@
         Num {
             bindings = <
        &kp PRINTSCREEN  &kp C_PREVIOUS     &kp C_PLAY_PAUSE  &kp C_NEXT       &none        &kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp SLASH
-       &kp LC(Z)        &kp LC(X)          &kp LC(C)         &kp LC(V)        &kp LC(Y)    &kp MINUS     &kp N4  &kp N5  &kp N6  &kp DOT
-&none  &none            &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &none        &kp PLUS      &kp N1  &kp N2  &kp N3  &kp CARET  &none
+       &kp LC(Z)        &kp LC(X)          &kp LC(C)         &kp LC(V)        &kp LC(Y)    &kp PLUS      &kp N4  &kp N5  &kp N6  &kp DOT
+&none  &none            &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &none        &kp CARET     &kp N1  &kp N2  &kp N3  &kp MINUS  &none
                                            &none             &none            &none        &kp EQUAL     &kp N0  &none
             >;
 
@@ -157,19 +157,19 @@
 
         SymL {
             bindings = <
-       &kp EXCLAMATION  &kp AT_SIGN  &kp HASH   &kp DOLLAR  &none       &none  &none      &none      &none         &none
-       &kp BACKSLASH    &kp PERCENT  &kp CARET  &kp AMPS    &kp PIPE    &none  &kp LSHFT  &kp LCTRL  &kp LEFT_ALT  &kp LGUI
-&none  &none            &kp GRAVE    &kp TILDE  &none       &none       &none  &none      &none      &none         &none     &none
-                                     &none      &none       &none       &none  &none      &none
+       &kp EXCLAMATION  &kp AT_SIGN    &kp HASH     &kp DOLLAR  &kp RA(NUMBER_1)    &none  &none      &none      &none         &none
+       &kp GRAVE        &kp RA(COLON)  &kp PERCENT  &kp AMPS    &kp AMPERSAND       &none  &kp LSHFT  &kp LCTRL  &kp LEFT_ALT  &kp LGUI
+&none  &none            &kp BACKSLASH  &kp PIPE     &none       &none               &none  &none      &none      &none         &none     &none
+                                       &none        &none       &none               &none  &none      &none
             >;
         };
 
         SymR {
             bindings = <
-       &none     &none         &none      &none      &none    &kp EQUAL     &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp QUESTION
-       &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none    &kp ASTERISK  &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp SLASH
-&none  &none     &none         &none      &none      &none    &kp RA(N)     &kp PLUS               &kp SEMICOLON      &kp COLON        &kp UNDERSCORE  &none
-                               &none      &none      &none    &none         &none                  &none
+       &none     &none         &none      &none      &none    &kp RA(QUESTION)  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT     &kp QUESTION
+       &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none    &kp EQUAL         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
+&none  &none     &none         &none      &none      &none    &kp RA(N)         &none                 &kp SEMICOLON          &kp COLON       &kp UNDERSCORE   &none
+                               &none      &none      &none    &none             &none                 &none
             >;
         };
 

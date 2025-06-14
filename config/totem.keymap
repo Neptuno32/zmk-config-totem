@@ -189,7 +189,7 @@
         SAI {
             bindings = <
         &trans  &trans              &trans              &trans                 &trans    &trans  &trans          &trans  &trans  &trans
-        &trans  &hmlsc LA(SPACE) S  &hmlsc LC(SPACE) D  &hmlsc LC(LEFT_ALT) F  &trans    &trans  &trans          &trans  &trans  &trans
+        &trans  &hmlsc LC(SPACE) S  &hmlsc LA(SPACE) D  &hmlsc LC(LEFT_ALT) F  &trans    &trans  &trans          &trans  &trans  &trans
 &tog 7  &trans  &trans              &trans              &trans                 &trans    &trans  &trans          &trans  &trans  &trans  &none
                                     &trans              &kp SPACE              &trans    &trans  &studio_unlock  &trans
             >;

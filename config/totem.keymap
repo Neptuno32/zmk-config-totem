@@ -115,20 +115,6 @@
             key-positions = <31 36>;
             layers = <0>;
         };
-
-        sairotate {
-            bindings = <&kp LA(SPACE)>;
-            key-positions = <11 33>;
-            slow-release;
-            layers = <7>;
-        };
-
-        saizoom {
-            bindings = <&kp LC(SPACE)>;
-            key-positions = <12 33>;
-            slow-release;
-            layers = <7>;
-        };
     };
 
     keymap {
@@ -202,10 +188,10 @@
 
         SAI {
             bindings = <
-        &trans  &trans             &trans  &trans     &trans    &trans  &trans          &trans  &trans  &trans
-        &trans  &hmlsc LEFT_ALT S  &trans  &trans     &trans    &trans  &trans          &trans  &trans  &trans
-&tog 7  &trans  &trans             &trans  &trans     &trans    &trans  &trans          &trans  &trans  &trans  &none
-                                   &trans  &kp SPACE  &trans    &trans  &studio_unlock  &trans
+        &trans  &trans              &trans              &trans                 &trans    &trans  &trans          &trans  &trans  &trans
+        &trans  &hmlsc LA(SPACE) S  &hmlsc LS(SPACE) D  &hmlsc LC(LEFT_ALT) F  &trans    &trans  &trans          &trans  &trans  &trans
+&tog 7  &trans  &trans              &trans              &trans                 &trans    &trans  &trans          &trans  &trans  &trans  &none
+                                    &trans              &kp SPACE              &trans    &trans  &studio_unlock  &trans
             >;
         };
 
